@@ -1,4 +1,4 @@
-# Prime Sieves using functional programming in D
+# Prime Sieves using Lambda & Functional Programming in D
 
 ## Version 1
 
