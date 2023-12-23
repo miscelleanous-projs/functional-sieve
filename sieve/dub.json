@@ -1,0 +1,5 @@
+{
+	"description": "Prime sieve using Lambda & FP in D",
+	"license": "MIT",
+	"name": "sieve"
+}
