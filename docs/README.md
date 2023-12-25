@@ -2,7 +2,7 @@
 
 You can can find hereafter the various iterations of a simple program I explored to reach a polished and more clean version commited in this repository. The focus was on `Lambda` and `FP` the D way 🙂
 
-## Version 1
+## Initial Version
 
 ```d
 import std.stdio: writeln;
@@ -16,7 +16,7 @@ void main(){
     writeln(iota(5_000).filter!isPrime);
 }
 ```
-## Version 2
+## 1st. Version
 
 ```d
 import std.stdio: writeln;
@@ -30,7 +30,7 @@ void main() {
     writeln(iota(5_000).filter!isPrime);
 }
 ```
-## Version 3
+## 3rd. Version
 
 ```d
 import std.stdio: writeln;
@@ -43,7 +43,7 @@ void main() {
     writeln(iota(5_000).filter!isPrime);
 }
 ```
-## Version 4
+## 4th. Version
 
 ```d
 import std.stdio: writeln;
@@ -57,7 +57,7 @@ void main() {
     writeln(iota(5_000).filter!isPrime);
 }
 ```
-## Version 5
+## 5th. Version
 
 ```d
 import std.stdio: writeln;
