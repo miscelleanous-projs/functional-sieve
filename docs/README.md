@@ -16,7 +16,7 @@ void main(){
     writeln(iota(5_000).filter!isPrime);
 }
 ```
-## 1st. Version
+## 1st. iteration Version
 
 ```d
 import std.stdio: writeln;
@@ -30,7 +30,7 @@ void main() {
     writeln(iota(5_000).filter!isPrime);
 }
 ```
-## 3rd. Version
+## 3rd. iteration Version
 
 ```d
 import std.stdio: writeln;
@@ -43,7 +43,7 @@ void main() {
     writeln(iota(5_000).filter!isPrime);
 }
 ```
-## 4th. Version
+## 4th. iteration Version
 
 ```d
 import std.stdio: writeln;
@@ -57,7 +57,7 @@ void main() {
     writeln(iota(5_000).filter!isPrime);
 }
 ```
-## 5th. Version
+## 5th. iteration Version
 
 ```d
 import std.stdio: writeln;
