@@ -65,6 +65,8 @@ void main() {
 ```
 ## 5th. iteration
 
+Extending edge cases beyond 2 known as the first prime till 13.
+
 ```d
 import std.stdio: writeln;
 import std.algorithm: all, filter;
