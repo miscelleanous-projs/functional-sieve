@@ -18,6 +18,8 @@ void main(){
 ```
 ## 1st. iteration
 
+Uses [canFind](https://dlang.org/phobos/std_algorithm_searching.html#canFind)
+
 ```d
 import std.stdio: writeln;
 import std.algorithm: any, filter;
