@@ -18,7 +18,7 @@ void main(){
 ```
 ## 1st. iteration
 
-Uses [canFind](https://dlang.org/phobos/std_algorithm_searching.html#canFind)
+Uses [canFind](https://dlang.org/phobos/std_algorithm_searching.html#canFind).
 
 ```d
 import std.stdio: writeln;
@@ -33,6 +33,8 @@ void main() {
 }
 ```
 ## 3rd. iteration
+
+Uses [all](https://dlang.org/phobos/std_algorithm_searching.html#all).
 
 ```d
 import std.stdio: writeln;
