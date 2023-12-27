@@ -34,7 +34,7 @@ void main() {
 ```
 ## 3rd. iteration
 
-Uses [all](https://dlang.org/phobos/std_algorithm_searching.html#all).
+Uses [all](https://dlang.org/phobos/std_algorithm_searching.html#all) instead.
 
 ```d
 import std.stdio: writeln;
@@ -49,7 +49,9 @@ void main() {
 ```
 ## 4th. iteration
 
-```d
+Reducing space search (iota's 2nd parameter) knowing that it's bounded.
+
+```d 
 import std.stdio: writeln;
 import std.algorithm: all, filter;
 import std.range: iota;
