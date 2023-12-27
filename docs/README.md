@@ -1,6 +1,8 @@
 # Prime Sieves using Lambda & Functional Programming in D
 
-You can can find hereafter the various iterations of a simple program I explored to reach a polished and more clean version commited in this repository. The focus was on `Lambda` and `FP` the D way 🙂
+You can can find hereafter the various iterations of a simple program I explored to reach a polished and more clean version commited in this repository.
+
+The focus was on `Lambda` and `FP` the D way 🙂
 
 ## Initial Version
 
