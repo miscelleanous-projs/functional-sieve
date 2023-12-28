@@ -1,4 +1,7 @@
 ## Initial iteration
+
+Simple starting point.
+
 ```rust
 fn main() {
     // closure syntax
@@ -13,6 +16,9 @@ fn main() {
 ```
 
 ## 2nd. iteration
+
+Naive attempt to reduce the space search.
+
 ```rust
 fn main() {
     // closure syntax
@@ -27,6 +33,9 @@ fn main() {
 ```
 
 ## 3rd. iteration
+
+Application of a consise upper bound to shriken the space search.
+
 ```rust
 fn main() {
     // closure syntax
@@ -41,6 +50,8 @@ fn main() {
 ```
 
 ## Last iteration
+
+Adding 3 as additional edge case and update the code accordingly.
 
 ```rust
 fn main() {
