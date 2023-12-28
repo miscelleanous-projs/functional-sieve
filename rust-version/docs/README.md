@@ -4,6 +4,12 @@ fn main() {
     // closure syntax
     let is_prime = |number: usize| -> bool {
        // number >= 2 && !(2..number).any(|x| number % x == 0)
+    };
+
+    let primes: Vec<usize> = (2..5_000).filter(|&x| is_prime(x)).collect();
+
+    println!("{:?}", primes);
+}
 ```
 
 ## 2nd. iteration
@@ -12,7 +18,13 @@ fn main() {
     // closure syntax
     let is_prime = |number: usize| -> bool {
        // number >= 2 && !(2..).take_while(|&x| x * x <= number).any(|x| number % x == 0)
- ```
+    };
+
+    let primes: Vec<usize> = (2..5_000).filter(|&x| is_prime(x)).collect();
+
+    println!("{:?}", primes);
+}
+```
 
 ## 3rd. iteration
 ```rust
@@ -20,6 +32,12 @@ fn main() {
     // closure syntax
     let is_prime = |number: usize| -> bool {
        // number >= 2 && !(2..=(number as f64).sqrt() as usize + 1).any(|x| number % x == 0)
+    };
+
+    let primes: Vec<usize> = (2..5_000).filter(|&x| is_prime(x)).collect();
+
+    println!("{:?}", primes);
+}
 ```
 
 ## Last iteration
