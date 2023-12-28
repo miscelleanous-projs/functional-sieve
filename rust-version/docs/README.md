@@ -1,3 +1,9 @@
+# Prime Sieves using Closure syntax & Functional Programming style in Rust
+
+You can find hereafter the various iterations of a simple program inspired from the corresponding D version you can also find here in the same repository.
+
+The focus was on `Closure syntax` and `FP style` the Rust way 🙂
+
 ## Initial iteration
 
 Simple starting point.
