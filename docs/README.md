@@ -4,7 +4,7 @@ You can can find hereafter the various iterations of a simple program I explored
 
 The focus was on `Lambda` and `FP` the D way 🙂
 
-## Initial Version
+## Initial Basic Version
 
 Uses [canFind](https://dlang.org/phobos/std_algorithm_searching.html#canFind).
 
