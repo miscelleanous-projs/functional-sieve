@@ -51,7 +51,7 @@ fn main() {
 
 ## Last iteration
 
-Adding 3 as additional edge case and update the code accordingly.
+Adding prime number 3 as additional edge case and update the code accordingly.
 
 ```rust
 fn main() {
