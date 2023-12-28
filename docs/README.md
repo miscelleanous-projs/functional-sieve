@@ -67,7 +67,7 @@ void main() {
     writeln(iota(5_000).filter!isPrime);
 }
 ```
-## 5th. iteration
+## Last iteration
 
 Extending edge cases 2 with 3 and adjust the rest of the code accordingly.
 
