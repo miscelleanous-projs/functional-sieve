@@ -38,7 +38,7 @@ void main() {
 ```
 ## 3rd. iteration
 
-Uses [all](https://dlang.org/phobos/std_algorithm_searching.html#all) instead and add an upper bound to reduce space search.
+Uses [all](https://dlang.org/phobos/std_algorithm_searching.html#all) instead.
 
 ```d
 import std.stdio: writeln;
