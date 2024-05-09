@@ -6,7 +6,7 @@ The focus was on `Lambda` and `FP` the D way 🙂
 
 ## Initial Basic Version
 
-Uses [canFind](https://dlang.org/phobos/std_algorithm_searching.html#canFind).
+Using [canFind](https://dlang.org/phobos/std_algorithm_searching.html#canFind).
 
 ```d
 import std.stdio: writeln;
@@ -22,7 +22,7 @@ void main(){
 ```
 ## 1st. iteration
 
-Uses [any](https://dlang.org/phobos/std_algorithm_searching.html#any).
+Using [any](https://dlang.org/phobos/std_algorithm_searching.html#any).
 
 ```d
 import std.stdio: writeln;
@@ -38,7 +38,7 @@ void main() {
 ```
 ## 3rd. iteration
 
-Uses [all](https://dlang.org/phobos/std_algorithm_searching.html#all) instead.
+Using [all](https://dlang.org/phobos/std_algorithm_searching.html#all) instead.
 
 ```d
 import std.stdio: writeln;
