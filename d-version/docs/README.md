@@ -14,10 +14,14 @@ import std.algorithm: filter, canFind;
 import std.range: iota;
 
 void main(){
+    const int LIMIT = 5_000;
+    
     // lambda syntax
     auto isPrime = (int candidate) => candidate >= 2 && !iota(2, candidate).canFind!(x => (candidate % x) == 0);
 	
-    writeln(iota(5_000).filter!isPrime);
+    auto primes = (int n) => (iota(n).filter!isPrime);
+	  
+    primes(LIMIT).writeln;
 }
 ```
 ## 1st. iteration
@@ -30,10 +34,14 @@ import std.algorithm: any, filter;
 import std.range: iota;
 
 void main() {
+    const int LIMIT = 5_000;
+    
     // lambda syntax
     auto isPrime = (int candidate) => candidate >= 2 && !iota(2, candidate).any!(x => (candidate % x) == 0);
 
-    writeln(iota(5_000).filter!isPrime);
+    auto primes = (int n) => (iota(n).filter!isPrime);
+	  
+    primes(LIMIT).writeln;
 }
 ```
 ## 3rd. iteration
@@ -46,9 +54,13 @@ import std.algorithm: all, filter, until;
 import std.range: iota;
 
 void main() {
+    const int LIMIT = 5_000;
+    
     auto isPrime = (int candidate) => candidate >= 2 && iota(2, candidate).until!(x => x * x > candidate).all!(x => (candidate % x) != 0);
 
-    writeln(iota(5_000).filter!isPrime);
+    auto primes = (int n) => (iota(n).filter!isPrime);
+	  
+    primes(LIMIT).writeln;
 }
 ```
 ## 4th. iteration
@@ -62,9 +74,13 @@ import std.range: iota;
 import std.math;
 
 void main() {
+    const int LIMIT = 5_000;
+    
     auto isPrime = (int candidate) => candidate >= 2 && iota(2, cast(int)sqrt(cast(real)candidate) + 1).all!(x => (candidate % x) != 0);
 
-    writeln(iota(5_000).filter!isPrime);
+    auto primes = (int n) => (iota(n).filter!isPrime);
+	  
+    primes(LIMIT).writeln;
 }
 ```
 ## Last iteration
@@ -78,13 +94,18 @@ import std.range: iota;
 import std.math;
 
 void main() {
+    const int LIMIT = 5_000;
+    
     auto isPrime = (int candidate) => 
         candidate >= 2 &&
         (candidate == 2 || candidate == 3 || 
         (candidate % 2 != 0 && candidate % 3 != 0 &&
         iota(5, cast(int)sqrt(cast(real)candidate) + 1).all!(x => (candidate % x) != 0)));
 
-    writeln(iota(5_000).filter!isPrime);
+    auto primes = (int n) => (iota(n).filter!isPrime);
+	  
+    primes(LIMIT).writeln;
+
 }
 ```
 ## Output
