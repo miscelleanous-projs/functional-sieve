@@ -15,7 +15,7 @@ import std.range: iota;
 
 void main(){
     // lambda syntax
-    auto isPrime = (int number) => number >= 2 && !iota(2, number).canFind!(x => (number % x) == 0);
+    auto isPrime = (int candidate) => candidate >= 2 && !iota(2, candidate).canFind!(x => (candidate % x) == 0);
 	
     writeln(iota(5_000).filter!isPrime);
 }
@@ -31,7 +31,7 @@ import std.range: iota;
 
 void main() {
     // lambda syntax
-    auto isPrime = (int number) => number >= 2 && !iota(2, number).any!(x => (number % x) == 0);
+    auto isPrime = (int candidate) => candidate >= 2 && !iota(2, candidate).any!(x => (candidate % x) == 0);
 
     writeln(iota(5_000).filter!isPrime);
 }
@@ -46,7 +46,7 @@ import std.algorithm: all, filter, until;
 import std.range: iota;
 
 void main() {
-    auto isPrime = (int number) => number >= 2 && iota(2, number).until!(x => x * x > number).all!(x => (number % x) != 0);
+    auto isPrime = (int candidate) => candidate >= 2 && iota(2, candidate).until!(x => x * x > candidate).all!(x => (candidate % x) != 0);
 
     writeln(iota(5_000).filter!isPrime);
 }
@@ -62,7 +62,7 @@ import std.range: iota;
 import std.math;
 
 void main() {
-    auto isPrime = (int number) => number >= 2 && iota(2, cast(int)sqrt(cast(real)number) + 1).all!(x => (number % x) != 0);
+    auto isPrime = (int candidate) => candidate >= 2 && iota(2, cast(int)sqrt(cast(real)candidate) + 1).all!(x => (candidate % x) != 0);
 
     writeln(iota(5_000).filter!isPrime);
 }
@@ -78,11 +78,11 @@ import std.range: iota;
 import std.math;
 
 void main() {
-    auto isPrime = (int number) => 
-        number >= 2 &&
-        (number == 2 || number == 3 || 
-        (number % 2 != 0 && number % 3 != 0 &&
-        iota(5, cast(int)sqrt(cast(real)number) + 1).all!(x => (number % x) != 0)));
+    auto isPrime = (int candidate) => 
+        candidate >= 2 &&
+        (candidate == 2 || candidate == 3 || 
+        (candidate % 2 != 0 && candidate % 3 != 0 &&
+        iota(5, cast(int)sqrt(cast(real)candidate) + 1).all!(x => (candidate % x) != 0)));
 
     writeln(iota(5_000).filter!isPrime);
 }
